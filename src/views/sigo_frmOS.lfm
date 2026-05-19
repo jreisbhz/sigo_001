@@ -1,0 +1,441 @@
+inherited frmOS: TfrmOS
+  Caption = 'Ordens de Serviço'
+  object pgcOS: TPageControl
+    Left = 0
+    Height = 500
+    Top = 0
+    Width = 520
+    Align = alClient
+    ParentControl = pnlForm
+    TabOrder = 0
+    object tabDadosOS: TTabSheet
+      Caption = 'Dados da OS'
+      object pnlDadosOSTopo: TPanel
+        Left = 0
+        Height = 56
+        Top = 0
+        Width = 510
+        Align = alTop
+        BevelOuter = bvNone
+        object lblNumOS: TLabel
+          Left = 4
+          Height = 16
+          Top = 4
+          Width = 44
+          Caption = 'Nº OS:'
+        end
+        object edtNumOS: TEdit
+          Left = 4
+          Height = 22
+          Top = 22
+          Width = 90
+          ReadOnly = True
+          TabOrder = 0
+        end
+        object lblStatusOS: TLabel
+          Left = 106
+          Height = 16
+          Top = 4
+          Width = 43
+          Caption = 'Status:'
+        end
+        object cmbStatusOS: TComboBox
+          Left = 106
+          Height = 22
+          Top = 22
+          Width = 110
+          Style = csDropDownList
+          TabOrder = 1
+        end
+        object lblBoxPrisma: TLabel
+          Left = 228
+          Height = 16
+          Top = 4
+          Width = 30
+          Caption = 'Box:'
+        end
+        object edtBoxPrisma: TEdit
+          Left = 228
+          Height = 22
+          Top = 22
+          Width = 60
+          TabOrder = 2
+        end
+        object lblPlacaOS: TLabel
+          Left = 300
+          Height = 16
+          Top = 4
+          Width = 39
+          Caption = 'Placa:'
+        end
+        object edtPlacaOS: TEdit
+          Left = 300
+          Height = 22
+          Top = 22
+          Width = 80
+          TabOrder = 3
+        end
+        object btnBuscarVeiculoOS: TBitBtn
+          Left = 390
+          Height = 24
+          Top = 20
+          Width = 110
+          Caption = 'F4 - Buscar Placa'
+          TabOrder = 4
+        end
+      end
+      object lblModeloOS: TLabel
+        Left = 4
+        Height = 16
+        Top = 62
+        Width = 47
+        Caption = 'Modelo:'
+      end
+      object edtModeloOS: TEdit
+        Left = 4
+        Height = 22
+        Top = 80
+        Width = 200
+        ReadOnly = True
+        TabOrder = 5
+      end
+      object lblKmOS: TLabel
+        Left = 216
+        Height = 16
+        Top = 62
+        Width = 22
+        Caption = 'KM:'
+      end
+      object edtKmOS: TEdit
+        Left = 216
+        Height = 22
+        Top = 80
+        Width = 70
+        TabOrder = 6
+      end
+      object lblClienteOS: TLabel
+        Left = 4
+        Height = 16
+        Top = 110
+        Width = 52
+        Caption = 'Cliente:'
+      end
+      object edtClienteOS: TEdit
+        Left = 4
+        Height = 22
+        Top = 128
+        Width = 250
+        ReadOnly = True
+        TabOrder = 7
+      end
+      object lblTelClienteOS: TLabel
+        Left = 264
+        Height = 16
+        Top = 110
+        Width = 56
+        Caption = 'Telefone:'
+      end
+      object edtTelClienteOS: TEdit
+        Left = 264
+        Height = 22
+        Top = 128
+        Width = 130
+        ReadOnly = True
+        TabOrder = 8
+      end
+      object lblMecanicoOS: TLabel
+        Left = 4
+        Height = 16
+        Top = 158
+        Width = 64
+        Caption = 'Mecânico:'
+      end
+      object cmbMecanicoOS: TComboBox
+        Left = 4
+        Height = 22
+        Top = 176
+        Width = 200
+        Style = csDropDownList
+        TabOrder = 9
+      end
+      object lblDataAberturaOS: TLabel
+        Left = 216
+        Height = 16
+        Top = 158
+        Width = 56
+        Caption = 'Abertura:'
+      end
+      object dtpDataAberturaOS: TDateTimePicker
+        Left = 216
+        Height = 22
+        Top = 176
+        Width = 110
+        Kind = dtkDate
+        TabOrder = 10
+      end
+      object lblDataPrevisaoOS: TLabel
+        Left = 338
+        Height = 16
+        Top = 158
+        Width = 62
+        Caption = 'Previsão:'
+      end
+      object dtpDataPrevisaoOS: TDateTimePicker
+        Left = 338
+        Height = 22
+        Top = 176
+        Width = 110
+        Kind = dtkDate
+        TabOrder = 11
+      end
+      object lblDefeitoOS: TLabel
+        Left = 4
+        Height = 16
+        Top = 206
+        Width = 104
+        Caption = 'Defeito Relatado:'
+      end
+      object mmDefeitoOS: TMemo
+        Left = 4
+        Height = 60
+        Top = 224
+        Width = 498
+        ScrollBars = ssVertical
+        TabOrder = 12
+      end
+      object lblServicoExecOS: TLabel
+        Left = 4
+        Height = 16
+        Top = 290
+        Width = 126
+        Caption = 'Serviço Executado:'
+      end
+      object mmServicoExecOS: TMemo
+        Left = 4
+        Height = 60
+        Top = 308
+        Width = 498
+        ScrollBars = ssVertical
+        TabOrder = 13
+      end
+      object lblObsOS: TLabel
+        Left = 4
+        Height = 16
+        Top = 374
+        Width = 82
+        Caption = 'Observações:'
+      end
+      object mmObsOS: TMemo
+        Left = 4
+        Height = 50
+        Top = 392
+        Width = 498
+        ScrollBars = ssVertical
+        TabOrder = 14
+      end
+    end
+    object tabItens: TTabSheet
+      Caption = 'Itens (Peças / Serviços)'
+      object lblPecasOS: TLabel
+        Left = 4
+        Height = 16
+        Top = 4
+        Width = 36
+        Caption = 'Peças:'
+      end
+      object pnlBotoesPecas: TPanel
+        Left = 0
+        Height = 28
+        Top = 22
+        Width = 510
+        BevelOuter = bvNone
+        object btnAddPecaOS: TBitBtn
+          Left = 4
+          Height = 24
+          Top = 2
+          Width = 100
+          Caption = '+ Peça'
+          TabOrder = 0
+        end
+        object btnRemPecaOS: TBitBtn
+          Left = 112
+          Height = 24
+          Top = 2
+          Width = 80
+          Caption = '- Remover'
+          TabOrder = 1
+        end
+      end
+      object grdPecasOS: TStringGrid
+        Left = 0
+        Height = 120
+        Top = 52
+        Width = 510
+        DefaultRowHeight = 22
+        FixedCols = 0
+        FixedRows = 1
+        TabOrder = 2
+      end
+      object lblServicosOS: TLabel
+        Left = 4
+        Height = 16
+        Top = 180
+        Width = 60
+        Caption = 'Serviços:'
+      end
+      object pnlBotoesServicos: TPanel
+        Left = 0
+        Height = 28
+        Top = 198
+        Width = 510
+        BevelOuter = bvNone
+        object btnAddServOS: TBitBtn
+          Left = 4
+          Height = 24
+          Top = 2
+          Width = 100
+          Caption = '+ Serviço'
+          TabOrder = 0
+        end
+        object btnRemServOS: TBitBtn
+          Left = 112
+          Height = 24
+          Top = 2
+          Width = 80
+          Caption = '- Remover'
+          TabOrder = 1
+        end
+      end
+      object grdServicosOS: TStringGrid
+        Left = 0
+        Height = 100
+        Top = 228
+        Width = 510
+        DefaultRowHeight = 22
+        FixedCols = 0
+        FixedRows = 1
+        TabOrder = 3
+      end
+    end
+    object tabFinanceiro: TTabSheet
+      Caption = 'Financeiro'
+      object grpFinanceiro: TGroupBox
+        Left = 4
+        Height = 260
+        Top = 4
+        Width = 490
+        Caption = 'Totais e Pagamento'
+        object lblTotalPecasOS: TLabel
+          Left = 12
+          Height = 16
+          Top = 20
+          Width = 69
+          Caption = 'Total Peças:'
+        end
+        object edtTotalPecasOS: TEdit
+          Left = 12
+          Height = 22
+          Top = 38
+          Width = 100
+          ReadOnly = True
+          TabOrder = 0
+          Text = '0,00'
+        end
+        object lblTotalServicosOS: TLabel
+          Left = 124
+          Height = 16
+          Top = 20
+          Width = 88
+          Caption = 'Total Serviços:'
+        end
+        object edtTotalServicosOS: TEdit
+          Left = 124
+          Height = 22
+          Top = 38
+          Width = 100
+          ReadOnly = True
+          TabOrder = 1
+          Text = '0,00'
+        end
+        object lblDescontoOS: TLabel
+          Left = 236
+          Height = 16
+          Top = 20
+          Width = 64
+          Caption = 'Desconto:'
+        end
+        object edtDescontoOS: TEdit
+          Left = 236
+          Height = 22
+          Top = 38
+          Width = 80
+          TabOrder = 2
+          Text = '0,00'
+        end
+        object lblTotalGeralOS: TLabel
+          Left = 12
+          Height = 16
+          Top = 78
+          Width = 78
+          Caption = 'TOTAL GERAL:'
+          Font.Bold = True
+        end
+        object edtTotalGeralOS: TEdit
+          Left = 12
+          Height = 30
+          Top = 96
+          Width = 140
+          ReadOnly = True
+          TabOrder = 3
+          Text = '0,00'
+        end
+        object lblFormaPgtoOS: TLabel
+          Left = 12
+          Height = 16
+          Top = 140
+          Width = 106
+          Caption = 'Forma de Pag.:'
+        end
+        object cmbFormaPgtoOS: TComboBox
+          Left = 12
+          Height = 22
+          Top = 158
+          Width = 140
+          Style = csDropDownList
+          TabOrder = 4
+        end
+        object lblValorPagoOS: TLabel
+          Left = 164
+          Height = 16
+          Top = 140
+          Width = 74
+          Caption = 'Valor Pago:'
+        end
+        object edtValorPagoOS: TEdit
+          Left = 164
+          Height = 22
+          Top = 158
+          Width = 100
+          TabOrder = 5
+          Text = '0,00'
+        end
+        object lblSaldoOS: TLabel
+          Left = 276
+          Height = 16
+          Top = 140
+          Width = 47
+          Caption = 'Saldo:'
+        end
+        object edtSaldoOS: TEdit
+          Left = 276
+          Height = 22
+          Top = 158
+          Width = 100
+          ReadOnly = True
+          TabOrder = 6
+          Text = '0,00'
+        end
+      end
+    end
+  end
+end

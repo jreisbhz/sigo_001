@@ -1,0 +1,101 @@
+inherited frmCaixa: TfrmCaixa
+  Caption = 'Caixa'
+  object pnlCaixaLayout: TPanel
+    Left = 0
+    Height = 480
+    Top = 0
+    Width = 700
+    Align = alClient
+    BevelOuter = bvNone
+    ParentControl = pnlForm
+    TabOrder = 0
+    object pnlCalendario: TPanel
+      Left = 0
+      Height = 480
+      Top = 0
+      Width = 210
+      Align = alLeft
+      BevelOuter = bvNone
+      object calDia: TCalendar
+        Left = 4
+        Height = 180
+        Top = 4
+        Width = 200
+        TabOrder = 0
+      end
+      object pnlResumo: TPanel
+        Left = 0
+        Height = 130
+        Top = 192
+        Width = 210
+        BevelOuter = bvNone
+        object lblEntradas: TLabel
+          Left = 8
+          Height = 16
+          Top = 4
+          Width = 60
+          Caption = 'Entradas:'
+          Font.Color = clGreen
+        end
+        object edtEntradas: TEdit
+          Left = 8
+          Height = 26
+          Top = 22
+          Width = 180
+          ReadOnly = True
+          TabOrder = 0
+          Text = '0,00'
+          Font.Size = 11
+        end
+        object lblSaidas: TLabel
+          Left = 8
+          Height = 16
+          Top = 56
+          Width = 44
+          Caption = 'Saídas:'
+          Font.Color = clNavy
+        end
+        object edtSaidas: TEdit
+          Left = 8
+          Height = 26
+          Top = 74
+          Width = 180
+          ReadOnly = True
+          TabOrder = 1
+          Text = '0,00'
+          Font.Size = 11
+        end
+        object lblSaldoCaixa: TLabel
+          Left = 8
+          Height = 16
+          Top = 108
+          Width = 44
+          Caption = 'Saldo:'
+          Font.Bold = True
+        end
+        object edtSaldoCaixa: TEdit
+          Left = 8
+          Height = 28
+          Top = 126
+          Width = 180
+          ReadOnly = True
+          TabOrder = 2
+          Text = '0,00'
+          Font.Size = 13
+          Font.Bold = True
+        end
+      end
+    end
+    object grdMovimentos: TStringGrid
+      Left = 214
+      Height = 480
+      Top = 0
+      Width = 486
+      Align = alClient
+      DefaultRowHeight = 22
+      FixedCols = 0
+      FixedRows = 1
+      TabOrder = 1
+    end
+  end
+end

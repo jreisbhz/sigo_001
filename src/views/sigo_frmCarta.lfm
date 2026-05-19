@@ -1,0 +1,105 @@
+inherited frmCarta: TfrmCarta
+  Caption = 'Modelos de Carta'
+  object pnlCabecCarta: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 600
+    Align = alTop
+    BevelOuter = bvNone
+    ParentControl = pnlForm
+    TabOrder = 0
+    object lblModeloCarta: TLabel
+      Left = 4
+      Height = 16
+      Top = 4
+      Width = 56
+      Caption = 'Modelo:'
+    end
+    object cmbModeloCarta: TComboBox
+      Left = 4
+      Height = 22
+      Top = 22
+      Width = 200
+      Style = csDropDownList
+      TabOrder = 0
+    end
+    object lblClienteCarta: TLabel
+      Left = 216
+      Height = 16
+      Top = 4
+      Width = 52
+      Caption = 'Cliente:'
+    end
+    object edtClienteCarta: TEdit
+      Left = 216
+      Height = 22
+      Top = 22
+      Width = 200
+      ReadOnly = True
+      TabOrder = 1
+    end
+    object btnBuscarClienteCarta: TBitBtn
+      Left = 424
+      Height = 24
+      Top = 20
+      Width = 80
+      Caption = 'Buscar'
+      TabOrder = 2
+    end
+    object btnGerarCarta: TBitBtn
+      Left = 514
+      Height = 24
+      Top = 20
+      Width = 50
+      Caption = 'Gerar'
+      TabOrder = 3
+    end
+    object btnImprimirCarta: TBitBtn
+      Left = 572
+      Height = 24
+      Top = 20
+      Width = 60
+      Caption = 'Imprimir'
+      TabOrder = 4
+    end
+  end
+  object grpTextoCarta: TGroupBox
+    Left = 4
+    Height = 200
+    Top = 58
+    Width = 590
+    Anchor = [akLeft, akTop, akRight]
+    Caption = 'Texto da Carta'
+    ParentControl = pnlForm
+    TabOrder = 1
+    object mmTextoCarta: TMemo
+      Left = 4
+      Height = 170
+      Top = 20
+      Width = 578
+      ScrollBars = ssVertical
+      TabOrder = 0
+    end
+  end
+  object grpHistorico: TGroupBox
+    Left = 4
+    Height = 180
+    Top = 266
+    Width = 590
+    Anchor = [akLeft, akTop, akRight]
+    Caption = 'Histórico de Cartas Enviadas'
+    ParentControl = pnlForm
+    TabOrder = 2
+    object grdHistoricoCarta: TStringGrid
+      Left = 4
+      Height = 150
+      Top = 20
+      Width = 578
+      DefaultRowHeight = 22
+      FixedCols = 0
+      FixedRows = 1
+      TabOrder = 0
+    end
+  end
+end

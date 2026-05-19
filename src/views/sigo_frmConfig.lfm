@@ -1,0 +1,252 @@
+inherited frmConfig: TfrmConfig
+  Caption = 'Configurações do Sistema'
+  object pgcConfig: TPageControl
+    Left = 0
+    Height = 500
+    Top = 0
+    Width = 700
+    Align = alClient
+    ParentControl = pnlForm
+    TabOrder = 0
+    object tabEmpresa: TTabSheet
+      Caption = 'Dados da Empresa'
+      object grpEmpresa: TGroupBox
+        Left = 4
+        Height = 290
+        Top = 4
+        Width = 440
+        Caption = 'Identificação'
+        object lblRazaoSocial: TLabel
+          Left = 12
+          Height = 16
+          Top = 20
+          Width = 92
+          Caption = 'Razão Social:'
+        end
+        object edtRazaoSocial: TEdit
+          Left = 12
+          Height = 22
+          Top = 38
+          Width = 410
+          TabOrder = 0
+        end
+        object lblNomeFantasia: TLabel
+          Left = 12
+          Height = 16
+          Top = 68
+          Width = 95
+          Caption = 'Nome Fantasia:'
+        end
+        object edtNomeFantasia: TEdit
+          Left = 12
+          Height = 22
+          Top = 86
+          Width = 410
+          TabOrder = 1
+        end
+        object lblCNPJConfig: TLabel
+          Left = 12
+          Height = 16
+          Top = 116
+          Width = 40
+          Caption = 'CNPJ:'
+        end
+        object edtCNPJConfig: TEdit
+          Left = 12
+          Height = 22
+          Top = 134
+          Width = 140
+          TabOrder = 2
+        end
+        object lblIEConfig: TLabel
+          Left = 164
+          Height = 16
+          Top = 116
+          Width = 18
+          Caption = 'IE:'
+        end
+        object edtIEConfig: TEdit
+          Left = 164
+          Height = 22
+          Top = 134
+          Width = 140
+          TabOrder = 3
+        end
+        object lblEnderecoConfig: TLabel
+          Left = 12
+          Height = 16
+          Top = 164
+          Width = 66
+          Caption = 'Endereço:'
+        end
+        object edtEnderecoConfig: TEdit
+          Left = 12
+          Height = 22
+          Top = 182
+          Width = 410
+          TabOrder = 4
+        end
+        object lblTelConfig: TLabel
+          Left = 12
+          Height = 16
+          Top = 212
+          Width = 60
+          Caption = 'Telefone:'
+        end
+        object edtTelConfig: TEdit
+          Left = 12
+          Height = 22
+          Top = 230
+          Width = 130
+          TabOrder = 5
+        end
+        object lblEmailConfig: TLabel
+          Left = 154
+          Height = 16
+          Top = 212
+          Width = 45
+          Caption = 'E-mail:'
+        end
+        object edtEmailConfig: TEdit
+          Left = 154
+          Height = 22
+          Top = 230
+          Width = 180
+          TabOrder = 6
+        end
+        object lblSiteConfig: TLabel
+          Left = 12
+          Height = 16
+          Top = 260
+          Width = 31
+          Caption = 'Site:'
+        end
+        object edtSiteConfig: TEdit
+          Left = 12
+          Height = 22
+          Top = 278
+          Width = 250
+          TabOrder = 7
+        end
+      end
+      object grpLogo: TGroupBox
+        Left = 454
+        Height = 200
+        Top = 4
+        Width = 210
+        Caption = 'Logo da Empresa'
+        object imgLogo: TImage
+          Left = 12
+          Height = 150
+          Top = 20
+          Width = 180
+          Proportional = True
+          Stretch = True
+        end
+        object btnCarregarLogo: TBitBtn
+          Left = 12
+          Height = 24
+          Top = 176
+          Width = 120
+          Caption = 'Carregar Imagem'
+          TabOrder = 0
+        end
+      end
+      object btnSalvarConfig: TBitBtn
+        Left = 12
+        Height = 30
+        Top = 310
+        Width = 140
+        Caption = 'Salvar Dados Empresa'
+        TabOrder = 10
+      end
+    end
+    object tabSistema: TTabSheet
+      Caption = 'Parâmetros do Sistema'
+      object grpSistema: TGroupBox
+        Left = 4
+        Height = 420
+        Top = 4
+        Width = 660
+        Caption = 'Parâmetros (edite diretamente na grade)'
+        object lblParamDica: TLabel
+          Left = 12
+          Height = 16
+          Top = 20
+          Width = 440
+          Caption = 'Clique duas vezes em um valor para editar. Clique em Salvar para confirmar.'
+          Font.Color = clNavy
+        end
+        object grdParametros: TStringGrid
+          Left = 4
+          Height = 330
+          Top = 40
+          Width = 648
+          DefaultRowHeight = 22
+          FixedCols = 0
+          FixedRows = 1
+          TabOrder = 0
+        end
+        object btnSalvarParam: TBitBtn
+          Left = 4
+          Height = 28
+          Top = 378
+          Width = 140
+          Caption = 'Salvar Parâmetros'
+          TabOrder = 1
+        end
+      end
+    end
+    object tabUsuarios: TTabSheet
+      Caption = 'Usuários'
+      object grpUsuarios: TGroupBox
+        Left = 4
+        Height = 420
+        Top = 4
+        Width = 660
+        Caption = 'Usuários do Sistema'
+        object grdUsuarios: TStringGrid
+          Left = 4
+          Height = 340
+          Top = 20
+          Width = 648
+          DefaultRowHeight = 22
+          FixedCols = 0
+          FixedRows = 1
+          TabOrder = 0
+        end
+        object pnlBotoesUser: TPanel
+          Left = 4
+          Height = 36
+          Top = 368
+          Width = 648
+          BevelOuter = bvNone
+          object btnNovoUser: TBitBtn
+            Left = 0
+            Height = 28
+            Top = 4
+            Width = 100
+            Caption = 'Novo Usuário'
+            TabOrder = 0
+          end
+          object btnEditarUser: TBitBtn
+            Left = 110
+            Height = 28
+            Top = 4
+            Width = 100
+            Caption = 'Editar'
+            TabOrder = 1
+          end
+          object btnExcluirUser: TBitBtn
+            Left = 220
+            Height = 28
+            Top = 4
+            Width = 100
+            Caption = 'Excluir'
+            TabOrder = 2
+          end
+        end
+      end
+    end
+  end
+end

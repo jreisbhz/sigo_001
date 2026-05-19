@@ -1,0 +1,123 @@
+inherited frmRelatorios: TfrmRelatorios
+  Caption = 'Relatórios'
+  object pnlRelLayout: TPanel
+    Left = 0
+    Height = 480
+    Top = 0
+    Width = 620
+    Align = alClient
+    BevelOuter = bvNone
+    ParentControl = pnlForm
+    TabOrder = 0
+    object pnlFiltrosRel: TPanel
+      Left = 0
+      Height = 60
+      Top = 0
+      Width = 620
+      Align = alTop
+      BevelOuter = bvNone
+      object lblGrupoRel: TLabel
+        Left = 4
+        Height = 16
+        Top = 4
+        Width = 44
+        Caption = 'Grupo:'
+      end
+      object cmbGrupoRel: TComboBox
+        Left = 4
+        Height = 22
+        Top = 22
+        Width = 110
+        Style = csDropDownList
+        TabOrder = 0
+      end
+      object lblFiltroDeRel: TLabel
+        Left = 126
+        Height = 16
+        Top = 4
+        Width = 22
+        Caption = 'De:'
+      end
+      object dtpFiltroDeRel: TDateTimePicker
+        Left = 126
+        Height = 22
+        Top = 22
+        Width = 100
+        Kind = dtkDate
+        TabOrder = 1
+      end
+      object lblFiltroAteRel: TLabel
+        Left = 238
+        Height = 16
+        Top = 4
+        Width = 25
+        Caption = 'Até:'
+      end
+      object dtpFiltroAteRel: TDateTimePicker
+        Left = 238
+        Height = 22
+        Top = 22
+        Width = 100
+        Kind = dtkDate
+        TabOrder = 2
+      end
+      object lblFiltroStatusRel: TLabel
+        Left = 350
+        Height = 16
+        Top = 4
+        Width = 43
+        Caption = 'Status:'
+      end
+      object cmbFiltroStatusRel: TComboBox
+        Left = 350
+        Height = 22
+        Top = 22
+        Width = 110
+        Style = csDropDownList
+        TabOrder = 3
+      end
+    end
+    object pnlListaRel: TPanel
+      Left = 0
+      Height = 360
+      Top = 62
+      Width = 620
+      Align = alTop
+      BevelOuter = bvNone
+      object grdRelatorios: TStringGrid
+        Left = 0
+        Height = 330
+        Top = 0
+        Width = 620
+        Align = alTop
+        DefaultRowHeight = 22
+        FixedCols = 0
+        FixedRows = 1
+        TabOrder = 0
+      end
+    end
+    object pnlBotoesRel: TPanel
+      Left = 0
+      Height = 40
+      Top = 424
+      Width = 620
+      BevelOuter = bvNone
+      object btnVisualizarRel: TBitBtn
+        Left = 4
+        Height = 30
+        Top = 4
+        Width = 120
+        Caption = 'Visualizar'
+        TabOrder = 0
+      end
+      object btnImprimirRel: TBitBtn
+        Left = 134
+        Height = 30
+        Top = 4
+        Width = 100
+        Caption = 'Imprimir'
+        TabOrder = 1
+      end
+    end
+  end
+end

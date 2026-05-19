@@ -1,0 +1,135 @@
+object frmLogin: TfrmLogin
+  Left = 0
+  Height = 380
+  Top = 0
+  Width = 400
+  BorderStyle = bsDialog
+  Caption = 'SIGO — Acesso ao Sistema'
+  ClientHeight = 380
+  ClientWidth = 400
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  object pnlTopo: TPanel
+    Left = 0
+    Height = 120
+    Top = 0
+    Width = 400
+    Align = alTop
+    BevelOuter = bvNone
+    Color = 2957101
+    TabOrder = 0
+    object imgLogo: TImage
+      Left = 16
+      Height = 80
+      Top = 20
+      Width = 200
+      Proportional = True
+      Stretch = True
+    end
+    object lblSistema: TLabel
+      Left = 16
+      Height = 30
+      Top = 20
+      Width = 370
+      Alignment = taCenter
+      Caption = 'SIGO — Gestão de Oficinas'
+      Font.Color = 16777215
+      Font.Height = -24
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object lblSubtitulo: TLabel
+      Left = 16
+      Height = 18
+      Top = 56
+      Width = 370
+      Alignment = taCenter
+      Caption = 'Sistema Integrado de Gestão Automotiva'
+      Font.Color = 16777215
+      Font.Height = -13
+      ParentFont = False
+    end
+  end
+  object pnlForm: TPanel
+    Left = 0
+    Height = 260
+    Top = 120
+    Width = 400
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 1
+    object lblUsuario: TLabel
+      Left = 48
+      Height = 16
+      Top = 40
+      Width = 57
+      Caption = 'Usuário:'
+    end
+    object edtUsuario: TEdit
+      Left = 48
+      Height = 28
+      Top = 60
+      Width = 304
+      OnKeyDown = edtUsuarioKeyDown
+      TabOrder = 0
+    end
+    object lblSenha: TLabel
+      Left = 48
+      Height = 16
+      Top = 104
+      Width = 41
+      Caption = 'Senha:'
+    end
+    object edtSenha: TEdit
+      Left = 48
+      Height = 28
+      Top = 124
+      Width = 304
+      OnKeyDown = edtSenhaKeyDown
+      PasswordChar = '*'
+      TabOrder = 1
+    end
+    object lblTentativas: TLabel
+      Left = 48
+      Height = 16
+      Top = 166
+      Width = 304
+      Alignment = taCenter
+      Caption = ''
+      Font.Color = 12583115
+      Font.Height = -12
+      ParentFont = False
+    end
+    object pnlBotoes: TPanel
+      Left = 48
+      Height = 44
+      Top = 194
+      Width = 304
+      BevelOuter = bvNone
+      TabOrder = 2
+      object btnOK: TBitBtn
+        Left = 60
+        Height = 36
+        Top = 4
+        Width = 88
+        Caption = 'Entrar'
+        Default = True
+        Kind = bkOK
+        ModalResult = 0
+        OnClick = btnOKClick
+        TabOrder = 0
+      end
+      object btnCancelar: TBitBtn
+        Left = 156
+        Height = 36
+        Top = 4
+        Width = 88
+        Cancel = True
+        Caption = 'Cancelar'
+        Kind = bkCancel
+        OnClick = btnCancelarClick
+        TabOrder = 1
+      end
+    end
+  end
+end

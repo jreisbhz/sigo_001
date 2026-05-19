@@ -1,0 +1,221 @@
+inherited frmVeiculo: TfrmVeiculo
+  Caption = 'Veículos'
+  object grpDadosVeiculo: TGroupBox
+    Left = 4
+    Height = 300
+    Top = 4
+    Width = 390
+    Anchor = [akLeft, akTop, akRight]
+    Caption = 'Dados do Veículo'
+    ParentControl = pnlForm
+    TabOrder = 0
+    object lblPlaca: TLabel
+      Left = 12
+      Height = 16
+      Top = 20
+      Width = 36
+      Caption = 'Placa:'
+    end
+    object edtPlaca: TEdit
+      Left = 12
+      Height = 22
+      Top = 38
+      Width = 100
+      CharCase = ecUpperCase
+      TabOrder = 0
+    end
+    object lblMarca: TLabel
+      Left = 12
+      Height = 16
+      Top = 68
+      Width = 40
+      Caption = 'Marca:'
+    end
+    object cmbMarca: TComboBox
+      Left = 12
+      Height = 22
+      Top = 86
+      Width = 170
+      DropDownCount = 12
+      Style = csDropDownList
+      TabOrder = 1
+    end
+    object lblModelo: TLabel
+      Left = 192
+      Height = 16
+      Top = 68
+      Width = 46
+      Caption = 'Modelo:'
+    end
+    object cmbModelo: TComboBox
+      Left = 192
+      Height = 22
+      Top = 86
+      Width = 186
+      DropDownCount = 12
+      Style = csDropDownList
+      TabOrder = 2
+    end
+    object lblAno: TLabel
+      Left = 12
+      Height = 16
+      Top = 116
+      Width = 26
+      Caption = 'Ano:'
+    end
+    object cmbAno: TComboBox
+      Left = 12
+      Height = 22
+      Top = 134
+      Width = 80
+      DropDownCount = 12
+      Style = csDropDownList
+      TabOrder = 3
+    end
+    object lblCor: TLabel
+      Left = 104
+      Height = 16
+      Top = 116
+      Width = 22
+      Caption = 'Cor:'
+    end
+    object edtCor: TEdit
+      Left = 104
+      Height = 22
+      Top = 134
+      Width = 120
+      TabOrder = 4
+    end
+    object lblCombustivel: TLabel
+      Left = 236
+      Height = 16
+      Top = 116
+      Width = 72
+      Caption = 'Combustível:'
+    end
+    object cmbCombustivel: TComboBox
+      Left = 236
+      Height = 22
+      Top = 134
+      Width = 142
+      Style = csDropDownList
+      TabOrder = 5
+    end
+    object lblKmAtual: TLabel
+      Left = 12
+      Height = 16
+      Top = 164
+      Width = 53
+      Caption = 'KM Atual:'
+    end
+    object seKmAtual: TSpinEdit
+      Left = 12
+      Height = 22
+      Top = 182
+      Width = 100
+      MaxValue = 9999999
+      MinValue = 0
+      TabOrder = 6
+      Value = 0
+    end
+    object lblRenavam: TLabel
+      Left = 124
+      Height = 16
+      Top = 164
+      Width = 53
+      Caption = 'Renavam:'
+    end
+    object edtRenavam: TEdit
+      Left = 124
+      Height = 22
+      Top = 182
+      Width = 130
+      TabOrder = 7
+    end
+    object lblChassi: TLabel
+      Left = 12
+      Height = 16
+      Top = 212
+      Width = 39
+      Caption = 'Chassi:'
+    end
+    object edtChassi: TEdit
+      Left = 12
+      Height = 22
+      Top = 230
+      Width = 360
+      CharCase = ecUpperCase
+      TabOrder = 8
+    end
+  end
+  object grpProprietario: TGroupBox
+    Left = 4
+    Height = 80
+    Top = 314
+    Width = 390
+    Anchor = [akLeft, akTop, akRight]
+    Caption = 'Proprietário'
+    ParentControl = pnlForm
+    TabOrder = 10
+    object lblClienteVeiculo: TLabel
+      Left = 12
+      Height = 16
+      Top = 20
+      Width = 50
+      Caption = 'Cliente:'
+    end
+    object edtClienteNome: TEdit
+      Left = 12
+      Height = 22
+      Top = 38
+      Width = 270
+      ReadOnly = True
+      TabOrder = 0
+    end
+    object btnBuscarCliente: TBitBtn
+      Left = 292
+      Height = 24
+      Top = 36
+      Width = 88
+      Caption = 'Buscar  F4'
+      TabOrder = 1
+    end
+    object lblClienteID: TLabel
+      Left = 12
+      Height = 0
+      Top = 0
+      Width = 0
+      Caption = '0'
+      Visible = False
+    end
+  end
+  object grpObsVeiculo: TGroupBox
+    Left = 4
+    Height = 100
+    Top = 404
+    Width = 390
+    Anchor = [akLeft, akTop, akRight]
+    Caption = 'Observações'
+    ParentControl = pnlForm
+    TabOrder = 20
+    object mmObsVeiculo: TMemo
+      Left = 4
+      Height = 70
+      Top = 20
+      Width = 378
+      ScrollBars = ssVertical
+      TabOrder = 0
+    end
+  end
+  object chkAtivoVeiculo: TCheckBox
+    Left = 12
+    Height = 20
+    Top = 514
+    Width = 60
+    Caption = 'Ativo'
+    Checked = True
+    ParentControl = pnlForm
+    State = cbChecked
+    TabOrder = 21
+  end
+end

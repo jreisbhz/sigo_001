@@ -1,0 +1,334 @@
+inherited frmCliente: TfrmCliente
+  Caption = 'Clientes'
+  object grpDadosPrincipais: TGroupBox
+    Left = 4
+    Height = 200
+    Top = 4
+    Width = 390
+    Anchor = [akLeft, akTop, akRight]
+    Caption = 'Dados Principais'
+    ParentControl = pnlForm
+    TabOrder = 0
+    object radTipoPF: TRadioButton
+      Left = 12
+      Height = 20
+      Top = 20
+      Width = 80
+      Caption = 'Pessoa Física'
+      Checked = True
+      TabOrder = 0
+    end
+    object radTipoPJ: TRadioButton
+      Left = 100
+      Height = 20
+      Top = 20
+      Width = 100
+      Caption = 'Pessoa Jurídica'
+      TabOrder = 1
+    end
+    object lblNome: TLabel
+      Left = 12
+      Height = 16
+      Top = 48
+      Width = 35
+      Caption = 'Nome:'
+    end
+    object edtNome: TEdit
+      Left = 12
+      Height = 22
+      Top = 66
+      Width = 360
+      TabOrder = 2
+    end
+    object lblFantasia: TLabel
+      Left = 12
+      Height = 16
+      Top = 94
+      Width = 46
+      Caption = 'Apelido:'
+    end
+    object edtFantasia: TEdit
+      Left = 12
+      Height = 22
+      Top = 112
+      Width = 360
+      TabOrder = 3
+    end
+    object lblCpfCnpj: TLabel
+      Left = 12
+      Height = 16
+      Top = 140
+      Width = 26
+      Caption = 'CPF:'
+    end
+    object edtCpfCnpj: TEdit
+      Left = 12
+      Height = 22
+      Top = 158
+      Width = 160
+      TabOrder = 4
+    end
+    object lblRgIe: TLabel
+      Left = 184
+      Height = 16
+      Top = 140
+      Width = 19
+      Caption = 'RG:'
+    end
+    object edtRgIe: TEdit
+      Left = 184
+      Height = 22
+      Top = 158
+      Width = 188
+      TabOrder = 5
+    end
+  end
+  object lblDataNasc: TLabel
+    Left = 8
+    Height = 16
+    Top = 212
+    Width = 88
+    Caption = 'Data Nascimento:'
+    ParentControl = pnlForm
+  end
+  object dtpDataNasc: TDateTimePicker
+    Left = 8
+    Height = 26
+    Top = 230
+    Width = 120
+    Date = 40179
+    Kind = dtkDate
+    ParentControl = pnlForm
+    TabOrder = 10
+  end
+  object grpContato: TGroupBox
+    Left = 4
+    Height = 130
+    Top = 268
+    Width = 390
+    Anchor = [akLeft, akTop, akRight]
+    Caption = 'Contato'
+    ParentControl = pnlForm
+    TabOrder = 11
+    object lblTelefone: TLabel
+      Left = 12
+      Height = 16
+      Top = 20
+      Width = 55
+      Caption = 'Telefone:'
+    end
+    object edtTelefone: TEdit
+      Left = 12
+      Height = 22
+      Top = 38
+      Width = 160
+      TabOrder = 0
+    end
+    object lblCelular: TLabel
+      Left = 184
+      Height = 16
+      Top = 20
+      Width = 48
+      Caption = 'Celular 1:'
+    end
+    object edtCelular: TEdit
+      Left = 184
+      Height = 22
+      Top = 38
+      Width = 188
+      TabOrder = 1
+    end
+    object lblCelular2: TLabel
+      Left = 12
+      Height = 16
+      Top = 68
+      Width = 48
+      Caption = 'Celular 2:'
+    end
+    object edtCelular2: TEdit
+      Left = 12
+      Height = 22
+      Top = 86
+      Width = 160
+      TabOrder = 2
+    end
+    object lblEmail: TLabel
+      Left = 184
+      Height = 16
+      Top = 68
+      Width = 36
+      Caption = 'E-mail:'
+    end
+    object edtEmail: TEdit
+      Left = 184
+      Height = 22
+      Top = 86
+      Width = 188
+      TabOrder = 3
+    end
+  end
+  object grpEndereco: TGroupBox
+    Left = 4
+    Height = 220
+    Top = 408
+    Width = 390
+    Anchor = [akLeft, akTop, akRight]
+    Caption = 'Endereço'
+    ParentControl = pnlForm
+    TabOrder = 20
+    object lblCep: TLabel
+      Left = 12
+      Height = 16
+      Top = 20
+      Width = 27
+      Caption = 'CEP:'
+    end
+    object edtCep: TEdit
+      Left = 12
+      Height = 22
+      Top = 38
+      Width = 100
+      TabOrder = 0
+    end
+    object btnBuscarCep: TBitBtn
+      Left = 120
+      Height = 24
+      Top = 36
+      Width = 80
+      Caption = 'Buscar CEP'
+      TabOrder = 1
+    end
+    object lblLogradouro: TLabel
+      Left = 12
+      Height = 16
+      Top = 68
+      Width = 70
+      Caption = 'Logradouro:'
+    end
+    object edtLogradouro: TEdit
+      Left = 12
+      Height = 22
+      Top = 86
+      Width = 260
+      TabOrder = 2
+    end
+    object lblNumero: TLabel
+      Left = 282
+      Height = 16
+      Top = 68
+      Width = 48
+      Caption = 'Número:'
+    end
+    object edtNumero: TEdit
+      Left = 282
+      Height = 22
+      Top = 86
+      Width = 90
+      TabOrder = 3
+    end
+    object lblComplemento: TLabel
+      Left = 12
+      Height = 16
+      Top = 114
+      Width = 76
+      Caption = 'Complemento:'
+    end
+    object edtComplemento: TEdit
+      Left = 12
+      Height = 22
+      Top = 132
+      Width = 360
+      TabOrder = 4
+    end
+    object lblBairro: TLabel
+      Left = 12
+      Height = 16
+      Top = 160
+      Width = 40
+      Caption = 'Bairro:'
+    end
+    object edtBairro: TEdit
+      Left = 12
+      Height = 22
+      Top = 178
+      Width = 200
+      TabOrder = 5
+    end
+    object lblCidade: TLabel
+      Left = 220
+      Height = 16
+      Top = 160
+      Width = 42
+      Caption = 'Cidade:'
+    end
+    object edtCidade: TEdit
+      Left = 220
+      Height = 22
+      Top = 178
+      Width = 130
+      TabOrder = 6
+    end
+    object lblUF: TLabel
+      Left = 358
+      Height = 16
+      Top = 160
+      Width = 19
+      Caption = 'UF:'
+    end
+    object cmbUF: TComboBox
+      Left = 358
+      Height = 22
+      Top = 178
+      Width = 24
+      DropDownCount = 10
+      Style = csDropDownList
+      TabOrder = 7
+    end
+  end
+  object grpObs: TGroupBox
+    Left = 4
+    Height = 100
+    Top = 636
+    Width = 390
+    Anchor = [akLeft, akTop, akRight]
+    Caption = 'Observações'
+    ParentControl = pnlForm
+    TabOrder = 30
+    object mmObs: TMemo
+      Left = 4
+      Height = 70
+      Top = 20
+      Width = 378
+      ScrollBars = ssVertical
+      TabOrder = 0
+    end
+  end
+  object lblLimite: TLabel
+    Left = 8
+    Height = 16
+    Top = 744
+    Width = 100
+    Caption = 'Limite de Crédito:'
+    ParentControl = pnlForm
+  end
+  object edtLimiteCredito: TEdit
+    Left = 8
+    Height = 22
+    Top = 762
+    Width = 100
+    ParentControl = pnlForm
+    TabOrder = 31
+    Text = '0,00'
+  end
+  object chkAtivo: TCheckBox
+    Left = 120
+    Height = 20
+    Top = 764
+    Width = 60
+    Caption = 'Ativo'
+    Checked = True
+    ParentControl = pnlForm
+    State = cbChecked
+    TabOrder = 32
+  end
+end

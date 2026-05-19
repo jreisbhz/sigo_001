@@ -1,0 +1,227 @@
+inherited frmVenda: TfrmVenda
+  Caption = 'Vendas'
+  object grpCabecVenda: TGroupBox
+    Left = 4
+    Height = 130
+    Top = 4
+    Width = 500
+    Anchor = [akLeft, akTop, akRight]
+    Caption = 'Cabeçalho da Venda'
+    ParentControl = pnlForm
+    TabOrder = 0
+    object lblNumComanda: TLabel
+      Left = 12
+      Height = 16
+      Top = 20
+      Width = 65
+      Caption = 'Comanda:'
+    end
+    object edtNumComanda: TEdit
+      Left = 12
+      Height = 22
+      Top = 38
+      Width = 80
+      ReadOnly = True
+      TabOrder = 0
+    end
+    object lblDataVenda: TLabel
+      Left = 104
+      Height = 16
+      Top = 20
+      Width = 35
+      Caption = 'Data:'
+    end
+    object dtpDataVenda: TDateTimePicker
+      Left = 104
+      Height = 22
+      Top = 38
+      Width = 110
+      Kind = dtkDate
+      TabOrder = 1
+    end
+    object lblStatusVenda: TLabel
+      Left = 226
+      Height = 16
+      Top = 20
+      Width = 43
+      Caption = 'Status:'
+    end
+    object cmbStatusVenda: TComboBox
+      Left = 226
+      Height = 22
+      Top = 38
+      Width = 100
+      Style = csDropDownList
+      TabOrder = 2
+    end
+    object lblClienteVenda: TLabel
+      Left = 12
+      Height = 16
+      Top = 70
+      Width = 52
+      Caption = 'Cliente:'
+    end
+    object edtClienteVenda: TEdit
+      Left = 12
+      Height = 22
+      Top = 88
+      Width = 260
+      ReadOnly = True
+      TabOrder = 3
+    end
+    object btnBuscarClienteVenda: TBitBtn
+      Left = 282
+      Height = 24
+      Top = 86
+      Width = 90
+      Caption = 'Buscar'
+      TabOrder = 4
+    end
+    object lblAtendenteVenda: TLabel
+      Left = 384
+      Height = 16
+      Top = 70
+      Width = 68
+      Caption = 'Atendente:'
+    end
+    object cmbAtendenteVenda: TComboBox
+      Left = 384
+      Height = 22
+      Top = 88
+      Width = 108
+      Style = csDropDownList
+      TabOrder = 5
+    end
+  end
+  object grpItensVenda: TGroupBox
+    Left = 4
+    Height = 200
+    Top = 142
+    Width = 500
+    Anchor = [akLeft, akTop, akRight]
+    Caption = 'Itens da Venda'
+    ParentControl = pnlForm
+    TabOrder = 10
+    object pnlBotoesItensVenda: TPanel
+      Left = 0
+      Height = 28
+      Top = 18
+      Width = 494
+      BevelOuter = bvNone
+      object btnAddItemVenda: TBitBtn
+        Left = 4
+        Height = 24
+        Top = 2
+        Width = 100
+        Caption = '+ Item'
+        TabOrder = 0
+      end
+      object btnRemItemVenda: TBitBtn
+        Left = 112
+        Height = 24
+        Top = 2
+        Width = 80
+        Caption = '- Remover'
+        TabOrder = 1
+      end
+    end
+    object grdItensVenda: TStringGrid
+      Left = 0
+      Height = 148
+      Top = 48
+      Width = 494
+      DefaultRowHeight = 22
+      FixedCols = 0
+      FixedRows = 1
+      TabOrder = 2
+    end
+  end
+  object grpTotaisVenda: TGroupBox
+    Left = 4
+    Height = 130
+    Top = 350
+    Width = 500
+    Anchor = [akLeft, akTop, akRight]
+    Caption = 'Totais e Pagamento'
+    ParentControl = pnlForm
+    TabOrder = 20
+    object lblSubtotalVenda: TLabel
+      Left = 12
+      Height = 16
+      Top = 20
+      Width = 62
+      Caption = 'Subtotal:'
+    end
+    object edtSubtotalVenda: TEdit
+      Left = 12
+      Height = 22
+      Top = 38
+      Width = 100
+      ReadOnly = True
+      TabOrder = 0
+      Text = '0,00'
+    end
+    object lblDescontoVenda: TLabel
+      Left = 124
+      Height = 16
+      Top = 20
+      Width = 64
+      Caption = 'Desconto:'
+    end
+    object edtDescontoVenda: TEdit
+      Left = 124
+      Height = 22
+      Top = 38
+      Width = 80
+      TabOrder = 1
+      Text = '0,00'
+    end
+    object lblTotalVenda: TLabel
+      Left = 216
+      Height = 16
+      Top = 20
+      Width = 42
+      Caption = 'TOTAL:'
+      Font.Bold = True
+    end
+    object edtTotalVenda: TEdit
+      Left = 216
+      Height = 30
+      Top = 36
+      Width = 120
+      ReadOnly = True
+      TabOrder = 2
+      Text = '0,00'
+    end
+    object lblFormaPgtoVenda: TLabel
+      Left = 12
+      Height = 16
+      Top = 70
+      Width = 106
+      Caption = 'Forma de Pag.:'
+    end
+    object cmbFormaPgtoVenda: TComboBox
+      Left = 12
+      Height = 22
+      Top = 88
+      Width = 140
+      Style = csDropDownList
+      TabOrder = 3
+    end
+    object lblObsVenda: TLabel
+      Left = 164
+      Height = 16
+      Top = 70
+      Width = 82
+      Caption = 'Observações:'
+    end
+    object mmObsVenda: TMemo
+      Left = 164
+      Height = 40
+      Top = 88
+      Width = 320
+      ScrollBars = ssNone
+      TabOrder = 4
+    end
+  end
+end

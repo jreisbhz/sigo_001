@@ -1,0 +1,285 @@
+inherited frmFornecedor: TfrmFornecedor
+  Caption = 'Fornecedores'
+  object grpDadosFornec: TGroupBox
+    Left = 4
+    Height = 180
+    Top = 4
+    Width = 390
+    Anchor = [akLeft, akTop, akRight]
+    Caption = 'Dados do Fornecedor'
+    ParentControl = pnlForm
+    TabOrder = 0
+    object radTipoPJ: TRadioButton
+      Left = 12
+      Height = 20
+      Top = 20
+      Width = 100
+      Caption = 'Pessoa Jurídica'
+      Checked = True
+      TabOrder = 0
+    end
+    object radTipoPF: TRadioButton
+      Left = 120
+      Height = 20
+      Top = 20
+      Width = 80
+      Caption = 'Pessoa Física'
+      TabOrder = 1
+    end
+    object lblRazaoSocial: TLabel
+      Left = 12
+      Height = 16
+      Top = 48
+      Width = 80
+      Caption = 'Razão Social:'
+    end
+    object edtRazaoSocial: TEdit
+      Left = 12
+      Height = 22
+      Top = 66
+      Width = 360
+      TabOrder = 2
+    end
+    object lblFantasiaF: TLabel
+      Left = 12
+      Height = 16
+      Top = 94
+      Width = 88
+      Caption = 'Nome Fantasia:'
+    end
+    object edtFantasiaF: TEdit
+      Left = 12
+      Height = 22
+      Top = 112
+      Width = 360
+      TabOrder = 3
+    end
+    object lblCnpjCpf: TLabel
+      Left = 12
+      Height = 16
+      Top = 140
+      Width = 38
+      Caption = 'CNPJ:'
+    end
+    object edtCnpjCpf: TEdit
+      Left = 12
+      Height = 22
+      Top = 158
+      Width = 160
+      TabOrder = 4
+    end
+    object lblIE: TLabel
+      Left = 184
+      Height = 16
+      Top = 140
+      Width = 19
+      Caption = 'IE:'
+    end
+    object edtIE: TEdit
+      Left = 184
+      Height = 22
+      Top = 158
+      Width = 188
+      TabOrder = 5
+    end
+  end
+  object grpContatoF: TGroupBox
+    Left = 4
+    Height = 120
+    Top = 192
+    Width = 390
+    Anchor = [akLeft, akTop, akRight]
+    Caption = 'Contato / Representante'
+    ParentControl = pnlForm
+    TabOrder = 10
+    object lblContatoNome: TLabel
+      Left = 12
+      Height = 16
+      Top = 20
+      Width = 84
+      Caption = 'Nome Contato:'
+    end
+    object edtContatoNome: TEdit
+      Left = 12
+      Height = 22
+      Top = 38
+      Width = 360
+      TabOrder = 0
+    end
+    object lblTelefoneF: TLabel
+      Left = 12
+      Height = 16
+      Top = 68
+      Width = 55
+      Caption = 'Telefone:'
+    end
+    object edtTelefoneF: TEdit
+      Left = 12
+      Height = 22
+      Top = 86
+      Width = 120
+      TabOrder = 1
+    end
+    object lblCelularF: TLabel
+      Left = 144
+      Height = 16
+      Top = 68
+      Width = 44
+      Caption = 'Celular:'
+    end
+    object edtCelularF: TEdit
+      Left = 144
+      Height = 22
+      Top = 86
+      Width = 120
+      TabOrder = 2
+    end
+    object lblEmailF: TLabel
+      Left = 276
+      Height = 16
+      Top = 68
+      Width = 36
+      Caption = 'E-mail:'
+    end
+    object edtEmailF: TEdit
+      Left = 276
+      Height = 22
+      Top = 86
+      Width = 106
+      TabOrder = 3
+    end
+  end
+  object grpEnderecoF: TGroupBox
+    Left = 4
+    Height = 180
+    Top = 320
+    Width = 390
+    Anchor = [akLeft, akTop, akRight]
+    Caption = 'Endereço'
+    ParentControl = pnlForm
+    TabOrder = 20
+    object lblCepF: TLabel
+      Left = 12
+      Height = 16
+      Top = 20
+      Width = 27
+      Caption = 'CEP:'
+    end
+    object edtCepF: TEdit
+      Left = 12
+      Height = 22
+      Top = 38
+      Width = 100
+      TabOrder = 0
+    end
+    object btnBuscarCepF: TBitBtn
+      Left = 120
+      Height = 24
+      Top = 36
+      Width = 88
+      Caption = 'Buscar CEP'
+      TabOrder = 1
+    end
+    object lblLogradouroF: TLabel
+      Left = 12
+      Height = 16
+      Top = 68
+      Width = 70
+      Caption = 'Logradouro:'
+    end
+    object edtLogradouroF: TEdit
+      Left = 12
+      Height = 22
+      Top = 86
+      Width = 260
+      TabOrder = 2
+    end
+    object lblNumeroF: TLabel
+      Left = 282
+      Height = 16
+      Top = 68
+      Width = 48
+      Caption = 'Número:'
+    end
+    object edtNumeroF: TEdit
+      Left = 282
+      Height = 22
+      Top = 86
+      Width = 90
+      TabOrder = 3
+    end
+    object lblBairroF: TLabel
+      Left = 12
+      Height = 16
+      Top = 114
+      Width = 40
+      Caption = 'Bairro:'
+    end
+    object edtBairroF: TEdit
+      Left = 12
+      Height = 22
+      Top = 132
+      Width = 140
+      TabOrder = 4
+    end
+    object lblCidadeF: TLabel
+      Left = 164
+      Height = 16
+      Top = 114
+      Width = 42
+      Caption = 'Cidade:'
+    end
+    object edtCidadeF: TEdit
+      Left = 164
+      Height = 22
+      Top = 132
+      Width = 140
+      TabOrder = 5
+    end
+    object lblUFF: TLabel
+      Left = 316
+      Height = 16
+      Top = 114
+      Width = 19
+      Caption = 'UF:'
+    end
+    object cmbUFF: TComboBox
+      Left = 316
+      Height = 22
+      Top = 132
+      Width = 60
+      DropDownCount = 10
+      Style = csDropDownList
+      TabOrder = 6
+    end
+  end
+  object grpObsF: TGroupBox
+    Left = 4
+    Height = 90
+    Top = 508
+    Width = 390
+    Anchor = [akLeft, akTop, akRight]
+    Caption = 'Observações'
+    ParentControl = pnlForm
+    TabOrder = 30
+    object mmObsF: TMemo
+      Left = 4
+      Height = 60
+      Top = 20
+      Width = 378
+      ScrollBars = ssVertical
+      TabOrder = 0
+    end
+  end
+  object chkAtivoF: TCheckBox
+    Left = 12
+    Height = 20
+    Top = 606
+    Width = 60
+    Caption = 'Ativo'
+    Checked = True
+    ParentControl = pnlForm
+    State = cbChecked
+    TabOrder = 31
+  end
+end

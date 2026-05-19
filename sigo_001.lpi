@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <General>
+      <Flags>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+        <MainUnitHasScaledStatement Value="True"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <MainUnit Value="0"/>
+      <Title Value="SIGO 001"/>
+      <UseAppBundle Value="False"/>
+      <ResourceType Value="res"/>
+    </General>
+    <BuildModes>
+      <Item Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Params Value=""/>
+    </RunParams>
+    <RequiredPackages>
+      <Item>
+        <PackageName Value="LCL"/>
+      </Item>
+      <Item>
+        <PackageName Value="FCL"/>
+      </Item>
+      <Item>
+        <PackageName Value="tachartlazaruspkg"/>
+      </Item>
+      <Item>
+        <PackageName Value="DateTimeCtrls"/>
+      </Item>
+    </RequiredPackages>
+    <Units Count="41">
+      <Unit0>
+        <Filename Value="sigo_001.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <Title Value="sigo_001"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="src/infra/sigo_Utils.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="src/infra/sigo_Config.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="src/infra/sigo_Logger.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="src/infra/sigo_DBConnection.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="src/infra/sigo_ConsultaCEP.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="src/infra/sigo_BaseRepository.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="src/models/sigo_ModelBase.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="src/models/sigo_ModelCliente.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="src/models/sigo_ModelVeiculo.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="src/models/sigo_ModelFornecedor.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="src/models/sigo_ModelColaborador.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="src/models/sigo_ModelPeca.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="src/models/sigo_ModelServico.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="src/models/sigo_ModelOS.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="src/models/sigo_ModelVenda.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="src/models/sigo_ModelFinanceiro.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="src/models/sigo_ModelUsuario.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="src/repositories/sigo_RepoCliente.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="src/repositories/sigo_RepoVeiculo.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="src/repositories/sigo_RepoFornecedor.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="src/repositories/sigo_RepoColaborador.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="src/repositories/sigo_RepoPeca.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="src/repositories/sigo_RepoServico.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="src/repositories/sigo_RepoOS.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="src/repositories/sigo_RepoVenda.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="src/repositories/sigo_RepoFinanceiro.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="src/repositories/sigo_RepoUsuario.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="src/controllers/sigo_CtrlCliente.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="src/controllers/sigo_CtrlVeiculo.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="src/controllers/sigo_CtrlFornecedor.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="src/controllers/sigo_CtrlColaborador.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="src/controllers/sigo_CtrlPeca.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="src/controllers/sigo_CtrlServico.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="src/controllers/sigo_CtrlOS.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="src/controllers/sigo_CtrlVenda.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="src/controllers/sigo_CtrlFinanceiro.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="src/controllers/sigo_CtrlUsuario.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit37>
+      <Unit38>
+        <Filename Value="src/views/sigo_frmBase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmBase"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit38>
+      <Unit39>
+        <Filename Value="src/views/sigo_frmLogin.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmLogin"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit39>
+      <Unit40>
+        <Filename Value="src/views/sigo_frmMain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit40>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="18"/>
+    <Target>
+      <Filename Value="bin/sigo_001"/>
+    </Target>
+    <SearchPaths>
+      <OtherUnitFiles Value="src/infra;src/models;src/repositories;src/controllers;src/views"/>
+      <UnitOutputDirectory Value="bin/units"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <SyntaxMode Value="Delphi"/>
+      </SyntaxOptions>
+    </Parsing>
+    <CodeGeneration>
+      <Checks>
+        <IOChecks Value="True"/>
+      </Checks>
+      <TargetCPU Value="i386"/>
+      <TargetOS Value="win32"/>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <GenerateDebugInfo Value="True"/>
+      </Debugging>
+    </Linking>
+    <Other>
+      <CustomOptions Value="-Cr -Co"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions>
+      <Item>
+        <Name Value="EAbort"/>
+        <Enabled Value="False"/>
+      </Item>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

@@ -1,0 +1,139 @@
+object frmBase: TfrmBase
+  Left = 0
+  Height = 560
+  Top = 0
+  Width = 900
+  Caption = 'Cadastro'
+  ClientHeight = 560
+  ClientWidth = 900
+  KeyPreview = True
+  OnCreate = FormCreate
+  OnKeyDown = FormKeyDown
+  object tlbAcoes: TToolBar
+    Left = 0
+    Height = 36
+    Top = 0
+    Width = 900
+    Align = alTop
+    ButtonHeight = 32
+    ButtonWidth = 96
+    Caption = 'tlbAcoes'
+    Flat = True
+    ShowCaptions = True
+    TabOrder = 0
+    object btnNovo: TToolButton
+      Left = 0
+      Top = 0
+      Caption = 'Novo  F2'
+      ImageIndex = 0
+      OnClick = btnNovoClick
+    end
+    object btnEditar: TToolButton
+      Left = 96
+      Top = 0
+      Caption = 'Editar  F3'
+      ImageIndex = 1
+      OnClick = btnEditarClick
+    end
+    object btnExcluir: TToolButton
+      Left = 192
+      Top = 0
+      Caption = 'Excluir  Del'
+      ImageIndex = 2
+      OnClick = btnExcluirClick
+    end
+    object sep1: TToolButton
+      Left = 288
+      Top = 0
+      Style = tbsDivider
+      Width = 8
+    end
+    object btnSalvar: TToolButton
+      Left = 296
+      Top = 0
+      Caption = 'Salvar'
+      ImageIndex = 3
+      OnClick = btnSalvarClick
+    end
+    object btnCancelar: TToolButton
+      Left = 392
+      Top = 0
+      Caption = 'Cancelar  Esc'
+      ImageIndex = 4
+      OnClick = btnCancelarClick
+    end
+  end
+  object pnlLista: TPanel
+    Left = 0
+    Height = 524
+    Top = 36
+    Width = 495
+    Align = alLeft
+    BevelOuter = bvNone
+    TabOrder = 1
+    object pnlBusca: TPanel
+      Left = 0
+      Height = 36
+      Top = 0
+      Width = 495
+      Align = alTop
+      BevelOuter = bvNone
+      TabOrder = 0
+      object lblBusca: TLabel
+        Left = 8
+        Height = 16
+        Top = 10
+        Width = 42
+        Caption = 'Buscar:'
+      end
+      object edtBusca: TEdit
+        Left = 56
+        Height = 22
+        Top = 8
+        Width = 200
+        OnKeyDown = edtBuscaKeyDown
+        TabOrder = 0
+      end
+      object btnBuscar: TBitBtn
+        Left = 262
+        Height = 24
+        Top = 6
+        Width = 80
+        Caption = 'Buscar  F5'
+        OnClick = btnBuscarClick
+        TabOrder = 1
+      end
+    end
+    object grdLista: TStringGrid
+      Left = 0
+      Height = 488
+      Top = 36
+      Width = 495
+      Align = alClient
+      DefaultRowHeight = 22
+      FixedCols = 0
+      FixedRows = 1
+      RowCount = 2
+      ScrollBars = ssAutoBoth
+      OnDblClick = grdListaDblClick
+      OnDrawCell = grdListaDrawCell
+      OnKeyDown = grdListaKeyDown
+      TabOrder = 1
+    end
+  end
+  object pnlForm: TPanel
+    Left = 495
+    Height = 524
+    Top = 36
+    Width = 405
+    Align = alClient
+    BevelOuter = bvNone
+    TabOrder = 2
+  end
+  object ilAcoes: TImageList
+    Left = 848
+    Top = 8
+    Width = 24
+    Height = 24
+  end
+end

@@ -1,0 +1,352 @@
+object frmMain: TfrmMain
+  Left = 0
+  Height = 720
+  Top = 0
+  Width = 1280
+  Caption = 'SIGO — Sistema Integrado de Gestão de Oficinas'
+  ClientHeight = 720
+  ClientWidth = 1280
+  OnCreate = FormCreate
+  WindowState = wsMaximized
+  object pnlTopo: TPanel
+    Left = 0
+    Height = 56
+    Top = 0
+    Width = 1280
+    Align = alTop
+    BevelOuter = bvNone
+    Color = 2957101
+    TabOrder = 0
+    object lblNomeSistema: TLabel
+      Left = 16
+      Height = 30
+      Top = 12
+      Width = 300
+      Caption = 'SIGO — Gestão de Oficinas'
+      Font.Color = 16777215
+      Font.Height = -19
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object lblRelogio: TLabel
+      Left = 900
+      Height = 18
+      Top = 10
+      Width = 200
+      Alignment = taRightJustify
+      Caption = '00/00/0000  00:00:00'
+      Font.Color = 16777215
+      Font.Height = -13
+      ParentFont = False
+    end
+    object lblUsuarioLogado: TLabel
+      Left = 900
+      Height = 18
+      Top = 30
+      Width = 200
+      Alignment = taRightJustify
+      Caption = 'Usuário: ---'
+      Font.Color = 16777215
+      Font.Height = -12
+      ParentFont = False
+    end
+  end
+  object mnuPrincipal: TMainMenu
+    Left = 8
+    Top = 60
+    object mnuCadastros: TMenuItem
+      Caption = 'Cadastros'
+      object mnuClientes: TMenuItem
+        Caption = 'Clientes'
+      end
+      object mnuVeiculos: TMenuItem
+        Caption = 'Veículos'
+      end
+      object mnuFornecedores: TMenuItem
+        Caption = 'Fornecedores'
+      end
+      object mnuColaboradores: TMenuItem
+        Caption = 'Colaboradores'
+      end
+      object mnuSep1: TMenuItem
+        Caption = '-'
+      end
+      object mnuPecas: TMenuItem
+        Caption = 'Peças / Estoque'
+      end
+      object mnuServicos: TMenuItem
+        Caption = 'Serviços'
+      end
+    end
+    object mnuOS: TMenuItem
+      Caption = 'Operacional'
+      object mnuOSMenu: TMenuItem
+        Caption = 'Ordens de Serviço'
+      end
+      object mnuAgenda: TMenuItem
+        Caption = 'Agenda'
+      end
+      object mnuVendas: TMenuItem
+        Caption = 'Vendas Diretas'
+      end
+    end
+    object mnuFinanceiro: TMenuItem
+      Caption = 'Financeiro'
+      object mnuCaixa: TMenuItem
+        Caption = 'Caixa'
+      end
+      object mnuContasReceber: TMenuItem
+        Caption = 'Contas a Receber'
+      end
+      object mnuContasPagar: TMenuItem
+        Caption = 'Contas a Pagar'
+      end
+    end
+    object mnuRelatorios: TMenuItem
+      Caption = 'Relatórios'
+      object mnuRelatorioOS: TMenuItem
+        Caption = 'Ordens de Serviço'
+      end
+      object mnuRelatorioEstoque: TMenuItem
+        Caption = 'Estoque'
+      end
+      object mnuRelatorioFinanceiro: TMenuItem
+        Caption = 'Financeiro'
+      end
+    end
+    object mnuSistema: TMenuItem
+      Caption = 'Sistema'
+      object mnuCartas: TMenuItem
+        Caption = 'Cartas / Comunicação'
+      end
+      object mnuConfig: TMenuItem
+        Caption = 'Configurações'
+      end
+      object mnuSepSistema: TMenuItem
+        Caption = '-'
+      end
+      object mnuSair: TMenuItem
+        Caption = 'Sair'
+      end
+    end
+  end
+  object pnlAtalhos: TPanel
+    Left = 0
+    Height = 48
+    Top = 56
+    Width = 1280
+    Align = alTop
+    BevelOuter = bvNone
+    Color = 15263976
+    TabOrder = 1
+    object btnAtlOS: TSpeedButton
+      Left = 4
+      Height = 40
+      Top = 4
+      Width = 80
+      Caption = 'Nova OS'
+      Flat = True
+    end
+    object btnAtlClientes: TSpeedButton
+      Left = 88
+      Height = 40
+      Top = 4
+      Width = 80
+      Caption = 'Clientes'
+      Flat = True
+    end
+    object btnAtlVeiculos: TSpeedButton
+      Left = 172
+      Height = 40
+      Top = 4
+      Width = 80
+      Caption = 'Veículos'
+      Flat = True
+    end
+    object btnAtlPecas: TSpeedButton
+      Left = 256
+      Height = 40
+      Top = 4
+      Width = 80
+      Caption = 'Peças'
+      Flat = True
+    end
+    object btnAtlAgenda: TSpeedButton
+      Left = 340
+      Height = 40
+      Top = 4
+      Width = 80
+      Caption = 'Agenda'
+      Flat = True
+    end
+    object btnAtlCaixa: TSpeedButton
+      Left = 424
+      Height = 40
+      Top = 4
+      Width = 80
+      Caption = 'Caixa'
+      Flat = True
+    end
+    object btnAtlFornec: TSpeedButton
+      Left = 508
+      Height = 80
+      Top = 4
+      Width = 100
+      Caption = 'Fornecedores'
+      Flat = True
+    end
+    object btnAtlRelat: TSpeedButton
+      Left = 612
+      Height = 40
+      Top = 4
+      Width = 80
+      Caption = 'Relatórios'
+      Flat = True
+    end
+  end
+  object pgcMain: TPageControl
+    Left = 0
+    Height = 592
+    Top = 104
+    Width = 1280
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 2
+    object tabInicio: TTabSheet
+      Caption = 'Início — Dashboard'
+      object pnlDashboard: TPanel
+        Left = 0
+        Height = 560
+        Top = 0
+        Width = 1248
+        Align = alClient
+        BevelOuter = bvNone
+        TabOrder = 0
+        object grpAgenda: TGroupBox
+          Left = 8
+          Height = 200
+          Top = 8
+          Width = 400
+          Caption = 'Agenda do Dia'
+          TabOrder = 0
+          object grdAgendaHoje: TStringGrid
+            Left = 4
+            Height = 172
+            Top = 20
+            Width = 392
+            Align = alClient
+            FixedCols = 0
+            FixedRows = 1
+            RowCount = 2
+            ScrollBars = ssAutoBoth
+            TabOrder = 0
+          end
+        end
+        object grpAniversariantes: TGroupBox
+          Left = 420
+          Height = 200
+          Top = 8
+          Width = 380
+          Caption = 'Aniversariantes'
+          TabOrder = 1
+          object grdAniversariantes: TStringGrid
+            Left = 4
+            Height = 172
+            Top = 20
+            Width = 372
+            Align = alClient
+            FixedCols = 0
+            FixedRows = 1
+            RowCount = 2
+            ScrollBars = ssAutoBoth
+            TabOrder = 0
+          end
+        end
+        object grpContasReceber: TGroupBox
+          Left = 8
+          Height = 200
+          Top = 220
+          Width = 400
+          Caption = 'Contas a Receber (Vencendo)'
+          TabOrder = 2
+          object grdContasReceber: TStringGrid
+            Left = 4
+            Height = 172
+            Top = 20
+            Width = 392
+            Align = alClient
+            FixedCols = 0
+            FixedRows = 1
+            RowCount = 2
+            ScrollBars = ssAutoBoth
+            TabOrder = 0
+          end
+        end
+        object grpContasPagar: TGroupBox
+          Left = 420
+          Height = 200
+          Top = 220
+          Width = 380
+          Caption = 'Contas a Pagar (Vencendo)'
+          TabOrder = 3
+          object grdContasPagar: TStringGrid
+            Left = 4
+            Height = 172
+            Top = 20
+            Width = 372
+            Align = alClient
+            FixedCols = 0
+            FixedRows = 1
+            RowCount = 2
+            ScrollBars = ssAutoBoth
+            TabOrder = 0
+          end
+        end
+        object chtResumo: TChart
+          Left = 820
+          Height = 400
+          Top = 8
+          Width = 420
+          Title.Text.Strings = (
+            'Caixa — Entradas x Saídas'
+          )
+          TabOrder = 4
+        end
+      end
+    end
+  end
+  object sbStatus: TStatusBar
+    Left = 0
+    Height = 24
+    Top = 696
+    Width = 1280
+    Panels = <
+      item
+        Width = 260
+        Text = 'Usuário: ---'
+      end
+      item
+        Width = 220
+        Text = 'Banco: sigo.db'
+      end
+      item
+        Alignment = taRightJustify
+        Width = 200
+        Text = '00/00/0000 00:00:00'
+      end>
+    SimplePanel = False
+  end
+  object tmrRelogio: TTimer
+    Enabled = False
+    Interval = 1000
+    OnTimer = tmrRelogioTimer
+    Left = 1200
+    Top = 8
+  end
+  object ilSistema: TImageList
+    Left = 1160
+    Top = 8
+    Width = 32
+    Height = 32
+  end
+end

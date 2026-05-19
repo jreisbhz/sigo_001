@@ -1,0 +1,36 @@
+# Lazarus/FPC build output
+bin/units/
+bin/*.exe
+bin/*.dll
+bin/sigo.db
+bin/sigo.db-shm
+bin/sigo.db-wal
+bin/logs/
+*.o
+*.ppu
+*.a
+*.compiled
+*.or
+*.res
+*.rsj
+*.lps
+backup/
+
+# Build logs (gerados pelo lazbuild)
+build_out.txt
+build_err.txt
+build.log
+
+# Lazarus IDE temporários
+*.bak
+*.~*
+lib/
+
+# Assets gerados / binários grandes
+assets/reports/*.pdf
+assets/reports/*.html
+
+# Sistema operacional
+Thumbs.db
+desktop.ini
+.DS_Store

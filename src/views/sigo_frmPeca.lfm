@@ -1,0 +1,347 @@
+inherited frmPeca: TfrmPeca
+  Caption = 'Peças / Estoque'
+  object grpCodigoPeca: TGroupBox
+    Left = 4
+    Height = 110
+    Top = 4
+    Width = 390
+    Anchor = [akLeft, akTop, akRight]
+    Caption = 'Códigos'
+    ParentControl = pnlForm
+    TabOrder = 0
+    object lblCodPeca: TLabel
+      Left = 12
+      Height = 16
+      Top = 20
+      Width = 52
+      Caption = 'Código:'
+    end
+    object edtCodPeca: TEdit
+      Left = 12
+      Height = 22
+      Top = 38
+      Width = 110
+      TabOrder = 0
+    end
+    object lblCodFabricante: TLabel
+      Left = 132
+      Height = 16
+      Top = 20
+      Width = 100
+      Caption = 'Cód. Fabricante:'
+    end
+    object edtCodFabricante: TEdit
+      Left = 132
+      Height = 22
+      Top = 38
+      Width = 110
+      TabOrder = 1
+    end
+    object lblCodBarras: TLabel
+      Left = 12
+      Height = 16
+      Top = 68
+      Width = 88
+      Caption = 'Cód. de Barras:'
+    end
+    object edtCodBarras: TEdit
+      Left = 12
+      Height = 22
+      Top = 86
+      Width = 360
+      TabOrder = 2
+    end
+  end
+  object grpDescPeca: TGroupBox
+    Left = 4
+    Height = 175
+    Top = 122
+    Width = 390
+    Anchor = [akLeft, akTop, akRight]
+    Caption = 'Descrição'
+    ParentControl = pnlForm
+    TabOrder = 10
+    object lblDescricaoPeca: TLabel
+      Left = 12
+      Height = 16
+      Top = 20
+      Width = 64
+      Caption = 'Descrição:'
+    end
+    object edtDescricaoPeca: TEdit
+      Left = 12
+      Height = 22
+      Top = 38
+      Width = 360
+      TabOrder = 0
+    end
+    object lblUnidade: TLabel
+      Left = 12
+      Height = 16
+      Top = 68
+      Width = 50
+      Caption = 'Unidade:'
+    end
+    object cmbUnidade: TComboBox
+      Left = 12
+      Height = 22
+      Top = 86
+      Width = 70
+      Style = csDropDownList
+      TabOrder = 1
+    end
+    object lblMarcaPeca: TLabel
+      Left = 94
+      Height = 16
+      Top = 68
+      Width = 42
+      Caption = 'Marca:'
+    end
+    object edtMarcaPeca: TEdit
+      Left = 94
+      Height = 22
+      Top = 86
+      Width = 130
+      TabOrder = 2
+    end
+    object lblLocalizacao: TLabel
+      Left = 236
+      Height = 16
+      Top = 68
+      Width = 74
+      Caption = 'Localização:'
+    end
+    object edtLocalizacao: TEdit
+      Left = 236
+      Height = 22
+      Top = 86
+      Width = 136
+      TabOrder = 3
+    end
+    object lblFornecedorPeca: TLabel
+      Left = 12
+      Height = 16
+      Top = 116
+      Width = 72
+      Caption = 'Fornecedor:'
+    end
+    object edtFornecedorPeca: TEdit
+      Left = 12
+      Height = 22
+      Top = 134
+      Width = 260
+      ReadOnly = True
+      TabOrder = 4
+    end
+    object btnBuscarFornecPeca: TBitBtn
+      Left = 282
+      Height = 24
+      Top = 132
+      Width = 100
+      Caption = 'Buscar'
+      TabOrder = 5
+    end
+  end
+  object grpEstoque: TGroupBox
+    Left = 4
+    Height = 80
+    Top = 305
+    Width = 390
+    Anchor = [akLeft, akTop, akRight]
+    Caption = 'Estoque'
+    ParentControl = pnlForm
+    TabOrder = 20
+    object lblEstoqueAtual: TLabel
+      Left = 12
+      Height = 16
+      Top = 20
+      Width = 45
+      Caption = 'Atual:'
+    end
+    object edtEstoqueAtual: TEdit
+      Left = 12
+      Height = 22
+      Top = 38
+      Width = 80
+      TabOrder = 0
+      Text = '0'
+    end
+    object lblEstoqueMinimo: TLabel
+      Left = 104
+      Height = 16
+      Top = 20
+      Width = 40
+      Caption = 'Mínimo:'
+    end
+    object edtEstoqueMinimo: TEdit
+      Left = 104
+      Height = 22
+      Top = 38
+      Width = 80
+      TabOrder = 1
+      Text = '0'
+    end
+    object lblEstoqueMaximo: TLabel
+      Left = 196
+      Height = 16
+      Top = 20
+      Width = 50
+      Caption = 'Máximo:'
+    end
+    object edtEstoqueMaximo: TEdit
+      Left = 196
+      Height = 22
+      Top = 38
+      Width = 80
+      TabOrder = 2
+      Text = '0'
+    end
+  end
+  object grpPrecos: TGroupBox
+    Left = 4
+    Height = 200
+    Top = 393
+    Width = 390
+    Anchor = [akLeft, akTop, akRight]
+    Caption = 'Precificação (Custo + Margem = Preço)'
+    ParentControl = pnlForm
+    TabOrder = 30
+    object lblPrecoCusto: TLabel
+      Left = 12
+      Height = 16
+      Top = 20
+      Width = 65
+      Caption = 'Custo (R$):'
+    end
+    object edtPrecoCusto: TEdit
+      Left = 12
+      Height = 22
+      Top = 38
+      Width = 80
+      TabOrder = 0
+      Text = '0,00'
+    end
+    object lblMargemVista: TLabel
+      Left = 12
+      Height = 16
+      Top = 68
+      Width = 95
+      Caption = '+ Margem Vista:'
+    end
+    object edtMargemVista: TEdit
+      Left = 12
+      Height = 22
+      Top = 86
+      Width = 80
+      TabOrder = 1
+      Text = '0,00'
+    end
+    object lblPrecoVista: TLabel
+      Left = 104
+      Height = 16
+      Top = 68
+      Width = 76
+      Caption = '= Preço Vista:'
+    end
+    object edtPrecoVista: TEdit
+      Left = 104
+      Height = 22
+      Top = 86
+      Width = 80
+      ReadOnly = True
+      TabOrder = 2
+      Text = '0,00'
+    end
+    object lblMargemPrazo: TLabel
+      Left = 12
+      Height = 16
+      Top = 116
+      Width = 98
+      Caption = '+ Margem Prazo:'
+    end
+    object edtMargemPrazo: TEdit
+      Left = 12
+      Height = 22
+      Top = 134
+      Width = 80
+      TabOrder = 3
+      Text = '0,00'
+    end
+    object lblPrecoPrazo: TLabel
+      Left = 104
+      Height = 16
+      Top = 116
+      Width = 80
+      Caption = '= Preço Prazo:'
+    end
+    object edtPrecoPrazo: TEdit
+      Left = 104
+      Height = 22
+      Top = 134
+      Width = 80
+      ReadOnly = True
+      TabOrder = 4
+      Text = '0,00'
+    end
+    object lblMargemAtacado: TLabel
+      Left = 12
+      Height = 16
+      Top = 164
+      Width = 108
+      Caption = '+ Margem Atacado:'
+    end
+    object edtMargemAtacado: TEdit
+      Left = 12
+      Height = 22
+      Top = 182
+      Width = 80
+      TabOrder = 5
+      Text = '0,00'
+    end
+    object lblPrecoAtacado: TLabel
+      Left = 104
+      Height = 16
+      Top = 164
+      Width = 94
+      Caption = '= Preço Atacado:'
+    end
+    object edtPrecoAtacado: TEdit
+      Left = 104
+      Height = 22
+      Top = 182
+      Width = 80
+      ReadOnly = True
+      TabOrder = 6
+      Text = '0,00'
+    end
+  end
+  object grpObsPeca: TGroupBox
+    Left = 4
+    Height = 80
+    Top = 601
+    Width = 390
+    Anchor = [akLeft, akTop, akRight]
+    Caption = 'Observações'
+    ParentControl = pnlForm
+    TabOrder = 40
+    object mmObsPeca: TMemo
+      Left = 4
+      Height = 50
+      Top = 20
+      Width = 378
+      ScrollBars = ssVertical
+      TabOrder = 0
+    end
+  end
+  object chkAtivoPeca: TCheckBox
+    Left = 12
+    Height = 20
+    Top = 690
+    Width = 60
+    Caption = 'Ativo'
+    Checked = True
+    ParentControl = pnlForm
+    State = cbChecked
+    TabOrder = 41
+  end
+end

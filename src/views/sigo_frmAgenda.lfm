@@ -1,0 +1,134 @@
+inherited frmAgenda: TfrmAgenda
+  Caption = 'Agenda'
+  object grpDadosAgenda: TGroupBox
+    Left = 4
+    Height = 310
+    Top = 4
+    Width = 390
+    Anchor = [akLeft, akTop, akRight]
+    Caption = 'Dados do Agendamento'
+    ParentControl = pnlForm
+    TabOrder = 0
+    object lblDataAgenda: TLabel
+      Left = 12
+      Height = 16
+      Top = 20
+      Width = 35
+      Caption = 'Data:'
+    end
+    object dtpDataAgenda: TDateTimePicker
+      Left = 12
+      Height = 22
+      Top = 38
+      Width = 110
+      Kind = dtkDate
+      TabOrder = 0
+    end
+    object lblHoraAgenda: TLabel
+      Left = 134
+      Height = 16
+      Top = 20
+      Width = 36
+      Caption = 'Hora:'
+    end
+    object dtpHoraAgenda: TDateTimePicker
+      Left = 134
+      Height = 22
+      Top = 38
+      Width = 80
+      Kind = dtkTime
+      TabOrder = 1
+    end
+    object lblClienteAgenda: TLabel
+      Left = 12
+      Height = 16
+      Top = 70
+      Width = 52
+      Caption = 'Cliente:'
+    end
+    object edtClienteAgenda: TEdit
+      Left = 12
+      Height = 22
+      Top = 88
+      Width = 254
+      ReadOnly = True
+      TabOrder = 2
+    end
+    object btnBuscarClienteAgenda: TBitBtn
+      Left = 274
+      Height = 24
+      Top = 86
+      Width = 100
+      Caption = 'Buscar'
+      TabOrder = 3
+    end
+    object lblVeiculoAgenda: TLabel
+      Left = 12
+      Height = 16
+      Top = 120
+      Width = 54
+      Caption = 'Veículo:'
+    end
+    object edtVeiculoAgenda: TEdit
+      Left = 12
+      Height = 22
+      Top = 138
+      Width = 130
+      ReadOnly = True
+      TabOrder = 4
+    end
+    object btnBuscarVeiculoAgenda: TBitBtn
+      Left = 152
+      Height = 24
+      Top = 136
+      Width = 100
+      Caption = 'Buscar Placa'
+      TabOrder = 5
+    end
+    object lblMecanicoAgenda: TLabel
+      Left = 12
+      Height = 16
+      Top = 170
+      Width = 64
+      Caption = 'Mecânico:'
+    end
+    object cmbMecanicoAgenda: TComboBox
+      Left = 12
+      Height = 22
+      Top = 188
+      Width = 240
+      Style = csDropDownList
+      TabOrder = 6
+    end
+    object lblStatusAgenda: TLabel
+      Left = 264
+      Height = 16
+      Top = 170
+      Width = 43
+      Caption = 'Status:'
+    end
+    object cmbStatusAgenda: TComboBox
+      Left = 264
+      Height = 22
+      Top = 188
+      Width = 110
+      Style = csDropDownList
+      TabOrder = 7
+    end
+    object lblObsAgenda: TLabel
+      Left = 12
+      Height = 16
+      Top = 220
+      Width = 82
+      Caption = 'Observações:'
+    end
+    object mmObsAgenda: TMemo
+      Left = 12
+      Height = 60
+      Top = 238
+      Width = 362
+      ScrollBars = ssVertical
+      TabOrder = 8
+    end
+  end
+end

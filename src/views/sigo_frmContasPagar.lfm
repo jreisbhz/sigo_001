@@ -1,0 +1,248 @@
+inherited frmContasPagar: TfrmContasPagar
+  Caption = 'Contas a Pagar'
+  object pnlFiltrosCP: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 700
+    Align = alTop
+    BevelOuter = bvNone
+    ParentControl = pnlBusca
+    TabOrder = 0
+    object lblFiltroStatusCP: TLabel
+      Left = 4
+      Height = 16
+      Top = 4
+      Width = 43
+      Caption = 'Status:'
+    end
+    object cmbFiltroStatusCP: TComboBox
+      Left = 4
+      Height = 22
+      Top = 22
+      Width = 90
+      Style = csDropDownList
+      TabOrder = 0
+    end
+    object lblFiltroFormaCP: TLabel
+      Left = 104
+      Height = 16
+      Top = 4
+      Width = 72
+      Caption = 'Forma Pag.:'
+    end
+    object cmbFiltroFormaCP: TComboBox
+      Left = 104
+      Height = 22
+      Top = 22
+      Width = 120
+      Style = csDropDownList
+      TabOrder = 1
+    end
+    object lblFiltroDeDtCP: TLabel
+      Left = 236
+      Height = 16
+      Top = 4
+      Width = 22
+      Caption = 'De:'
+    end
+    object dtpFiltroDe: TDateTimePicker
+      Left = 236
+      Height = 22
+      Top = 22
+      Width = 100
+      Kind = dtkDate
+      TabOrder = 2
+    end
+    object lblFiltroAteDtCP: TLabel
+      Left = 348
+      Height = 16
+      Top = 4
+      Width = 25
+      Caption = 'Até:'
+    end
+    object dtpFiltroAte: TDateTimePicker
+      Left = 348
+      Height = 22
+      Top = 22
+      Width = 100
+      Kind = dtkDate
+      TabOrder = 3
+    end
+    object btnFiltrarCP: TBitBtn
+      Left = 460
+      Height = 24
+      Top = 20
+      Width = 80
+      Caption = 'Filtrar'
+      TabOrder = 4
+    end
+  end
+  object grpDadosCP: TGroupBox
+    Left = 4
+    Height = 350
+    Top = 4
+    Width = 500
+    Anchor = [akLeft, akTop, akRight]
+    Caption = 'Lançamento'
+    ParentControl = pnlForm
+    TabOrder = 0
+    object lblFornecedorCP: TLabel
+      Left = 12
+      Height = 16
+      Top = 20
+      Width = 72
+      Caption = 'Fornecedor:'
+    end
+    object edtFornecedorCP: TEdit
+      Left = 12
+      Height = 22
+      Top = 38
+      Width = 250
+      ReadOnly = True
+      TabOrder = 0
+    end
+    object btnBuscarFornecCP: TBitBtn
+      Left = 272
+      Height = 24
+      Top = 36
+      Width = 90
+      Caption = 'Buscar'
+      TabOrder = 1
+    end
+    object lblDescricaoCP: TLabel
+      Left = 12
+      Height = 16
+      Top = 70
+      Width = 64
+      Caption = 'Descrição:'
+    end
+    object edtDescricaoCP: TEdit
+      Left = 12
+      Height = 22
+      Top = 88
+      Width = 470
+      TabOrder = 2
+    end
+    object lblValorCP: TLabel
+      Left = 12
+      Height = 16
+      Top = 118
+      Width = 41
+      Caption = 'Valor:'
+    end
+    object edtValorCP: TEdit
+      Left = 12
+      Height = 22
+      Top = 136
+      Width = 100
+      TabOrder = 3
+      Text = '0,00'
+    end
+    object lblValorPagoCP: TLabel
+      Left = 124
+      Height = 16
+      Top = 118
+      Width = 74
+      Caption = 'Valor Pago:'
+    end
+    object edtValorPagoCP: TEdit
+      Left = 124
+      Height = 22
+      Top = 136
+      Width = 100
+      TabOrder = 4
+      Text = '0,00'
+    end
+    object lblDataEmissaoCP: TLabel
+      Left = 12
+      Height = 16
+      Top = 168
+      Width = 56
+      Caption = 'Emissão:'
+    end
+    object dtpDataEmissaoCP: TDateTimePicker
+      Left = 12
+      Height = 22
+      Top = 186
+      Width = 100
+      Kind = dtkDate
+      TabOrder = 5
+    end
+    object lblDataVencCP: TLabel
+      Left = 124
+      Height = 16
+      Top = 168
+      Width = 74
+      Caption = 'Vencimento:'
+    end
+    object dtpDataVencCP: TDateTimePicker
+      Left = 124
+      Height = 22
+      Top = 186
+      Width = 100
+      Kind = dtkDate
+      TabOrder = 6
+    end
+    object lblDataPagCP: TLabel
+      Left = 236
+      Height = 16
+      Top = 168
+      Width = 80
+      Caption = 'Pgto. Efetivo:'
+    end
+    object dtpDataPagCP: TDateTimePicker
+      Left = 236
+      Height = 22
+      Top = 186
+      Width = 100
+      Kind = dtkDate
+      TabOrder = 7
+    end
+    object lblStatusCP: TLabel
+      Left = 12
+      Height = 16
+      Top = 218
+      Width = 43
+      Caption = 'Status:'
+    end
+    object cmbStatusCP: TComboBox
+      Left = 12
+      Height = 22
+      Top = 236
+      Width = 110
+      Style = csDropDownList
+      TabOrder = 8
+    end
+    object lblFormaPgtoCP: TLabel
+      Left = 134
+      Height = 16
+      Top = 218
+      Width = 106
+      Caption = 'Forma de Pag.:'
+    end
+    object cmbFormaPgtoCP: TComboBox
+      Left = 134
+      Height = 22
+      Top = 236
+      Width = 140
+      Style = csDropDownList
+      TabOrder = 9
+    end
+    object lblObsCP: TLabel
+      Left = 12
+      Height = 16
+      Top = 268
+      Width = 82
+      Caption = 'Observações:'
+    end
+    object mmObsCP: TMemo
+      Left = 12
+      Height = 60
+      Top = 286
+      Width = 470
+      ScrollBars = ssVertical
+      TabOrder = 10
+    end
+  end
+end

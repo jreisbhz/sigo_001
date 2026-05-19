@@ -1,0 +1,105 @@
+inherited frmServico: TfrmServico
+  Caption = 'Serviços'
+  object grpDadosServico: TGroupBox
+    Left = 4
+    Height = 280
+    Top = 4
+    Width = 390
+    Anchor = [akLeft, akTop, akRight]
+    Caption = 'Dados do Serviço'
+    ParentControl = pnlForm
+    TabOrder = 0
+    object lblCodServico: TLabel
+      Left = 12
+      Height = 16
+      Top = 20
+      Width = 52
+      Caption = 'Código:'
+    end
+    object edtCodServico: TEdit
+      Left = 12
+      Height = 22
+      Top = 38
+      Width = 100
+      TabOrder = 0
+    end
+    object lblNomeServico: TLabel
+      Left = 124
+      Height = 16
+      Top = 20
+      Width = 44
+      Caption = 'Nome:'
+    end
+    object edtNomeServico: TEdit
+      Left = 124
+      Height = 22
+      Top = 38
+      Width = 250
+      TabOrder = 1
+    end
+    object lblDescricaoServico: TLabel
+      Left = 12
+      Height = 16
+      Top = 68
+      Width = 64
+      Caption = 'Descrição:'
+    end
+    object mmDescricaoServico: TMemo
+      Left = 12
+      Height = 60
+      Top = 86
+      Width = 362
+      ScrollBars = ssVertical
+      TabOrder = 2
+    end
+    object lblValorPadrao: TLabel
+      Left = 12
+      Height = 16
+      Top = 158
+      Width = 92
+      Caption = 'Valor Padrão:'
+    end
+    object edtValorPadrao: TEdit
+      Left = 12
+      Height = 22
+      Top = 176
+      Width = 100
+      TabOrder = 3
+      Text = '0,00'
+    end
+    object lblTempoEstimado: TLabel
+      Left = 124
+      Height = 16
+      Top = 158
+      Width = 108
+      Caption = 'Tempo Estimado:'
+    end
+    object seTempoEstimado: TSpinEdit
+      Left = 124
+      Height = 22
+      Top = 176
+      Width = 80
+      MaxValue = 9999
+      MinValue = 0
+      TabOrder = 4
+      Value = 0
+    end
+    object lblMinutos: TLabel
+      Left = 212
+      Height = 16
+      Top = 180
+      Width = 52
+      Caption = 'minutos'
+    end
+    object chkAtivoServico: TCheckBox
+      Left = 12
+      Height = 20
+      Top = 240
+      Width = 60
+      Caption = 'Ativo'
+      Checked = True
+      State = cbChecked
+      TabOrder = 5
+    end
+  end
+end
